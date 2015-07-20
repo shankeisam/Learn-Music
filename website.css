@@ -1,0 +1,41 @@
+#h1 {
+	color: #FF7A00;
+	font-size: 70px;
+	font-family: "28 days later";
+}
+
+#electricguitar {
+	position: absolute;
+	left: 46.3%;
+	top: 38.5%;
+}
+
+#drums {
+	position: absolute;
+	left: 38%;
+	top: 48%;
+}
+
+#acousticguitar {
+	position: absolute;
+	right: 38%;
+	top: 48%;
+}
+
+#vocals {
+	position: absolute;
+	left: 38%;
+	Top: 65%;
+}
+
+#piano {
+	position: absolute;
+	right: 38%;
+	top: 65%;
+}
+
+#bass {
+	position: absolute;
+	left: 46.3%;
+	top: 76%;
+}

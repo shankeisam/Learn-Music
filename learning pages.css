@@ -1,0 +1,87 @@
+body {
+	background-color: #000000
+}
+
+#h1 {
+	color: #FF7A00;
+	font-size:50px;
+	font-family: "28 Days Later";
+}
+
+#menu {
+	position: fixed;
+	top: 20%;
+	width: 300px;
+	float: left;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu a:link{
+	font-family: "28 Days Later";
+	text-decoration: none;
+	font-size: 40px;
+}
+#menu a:hover {
+	color: #FF7A00;
+}
+
+#container{
+	background-color: #FF7A00;
+	border: 2px solid;
+	border-radius: 25px;
+}
+
+#elecgatvid {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#elecgatvid2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#elecgatvid3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#acousticgatvid {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#acousticgatvid2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#drumvid1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#pianovid1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+} 
+
+#pianovid2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#bassvid1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#vocalvid1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
