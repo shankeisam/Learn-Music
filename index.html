@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="circlr.js"></script>
 <link href="website.css" rel="stylesheet" type="text/css" />
 <title>Learn Music</title>
 </head>
@@ -8,24 +11,42 @@
 <div id="h1">
 	<center><h1>Learn Music</h1></center>
 </div>
-<div id="drums">
+<div id="nav">
+<div id="center"></div>
 	<a href="drums.html"><img src="./icons/drums.png" width="120px" height="120px"/></a>
-</div>
-<div id="electricguitar">
+
+
 	<a href="electric guitar.html"><img src="./icons/Electric-Guitar.png" width="120px" height="120px"/></a>
-</div>
-<div id="bass">
+
+
 	<a href="bass.html"><img src="./icons/bass.png" width="120px" height="120px"/></a>
-</div>
-<div id="acousticguitar">
+
 	<a href="acoustic guitar.html"><img src="./icons/acoustic-guitar.png" width="120px" height="120px"/></a>
-</div>
-<div id="vocals">
+
 	<a href="vocals.html"><img src="./icons/vocals.png" width="120px" height="120px"/></a>
-</div>
-<div id="piano">
+
 	<a href="piano.html"><img src="./icons/piano.png" width="120px" height="120px"/></a>
+
 </div>
+
+<script type="jquery">
+var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
+    radius = '12em', //distance from center
+    start = -90, //shift start from 0
+    $elements = $('a:not(:first-child)'),
+    numberOfElements = (type === 1) ?  $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
+    slice = 360 * type / numberOfElements;
+
+$elements.each(function(i) {
+    var $self = $(this),
+        rotate = slice * i + start,
+        rotateReverse = rotate * -1;
+    
+    $self.css({
+        'transform': 'rotate(' + rotate + 'deg) translate(' + radius + ') rotate(' + rotateReverse + 'deg)'
+    });
+});
+</script>
 
 
 
