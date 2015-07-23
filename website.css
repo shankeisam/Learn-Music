@@ -8,8 +8,6 @@
 	position: relative;
     width: 18em;
     height: 18em;
-    /*padding: 2.8em;*/
-	border: dotted;
     border-radius: 50%;
     margin: 1.75em auto 0;
 }
@@ -17,7 +15,6 @@
 .circle-container a {
 	display: block;
     position: absolute;
-	border: dotted;
 	border-radius:50%;
     top: 40%; left: 40%;
     /*width: 4em; height: 4em;*/
